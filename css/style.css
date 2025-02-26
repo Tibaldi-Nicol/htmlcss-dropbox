@@ -1,114 +1,153 @@
 /* ========== RESET CSS ========== */
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 /* --- TEXT UTILITIES --- */
-
-/*(Classi monotematiche da usare dove serve)*/
-
-
-.flex{
+.flex {
     display: flex;
 }
-/*per il contenuto dopo il jumbotron*/
-.container{
+
+.container {
     width: 1000px;
     margin: 0 auto;
     padding: 0;
     background-color: aqua;
 }
 
-.center-align-items{
+.center-align-items {
     align-items: center;
 }
 
-.justify-content{
+.justify-content {
     justify-content: center;
 }
 
-/* --- LAYOUT PRINCIPALE --- */
+.spacebetween {
+    justify-content: space-between;
+}
 
-body{
+.reverse {
+    flex-direction: column;
+}
+
+/* --- LAYOUT PRINCIPALE --- */
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
-    /*avendo usato fixed devo dare padding top per far uscire lo sfondo*/
+main {
     padding-top: 100px;
 }
 
-header{
+header {
     height: 80px;
     background-color: white;
-    /*solo per ricordare*/
     flex-direction: row;
     position: fixed;
     width: 100%;
-    
 }
 
-
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
 /* ========== NAVBAR ========== */
-/*Contenitore che mi divide le due mezze navbar*/
-.spaziatura-navbar{
+.spaziatura-navbar {
     justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
-    /*metto altezza anche ai div essendo ereditabile*/
     height: 100%;
-    
-    
 }
-/*do aria agli elemenit di nav destra e sinistra*/
-.navbar-sx{
-    
+
+.navbar-sx {
     gap: 30px;
     font-size: 1.1rem;
-
 }
 
-.navbar-dx{
-
+.navbar-dx {
     gap: 30px;
     font-size: 1rem;
-
 }
 
-.pulsante-inizia a{
+.pulsante-inizia a {
     background-color: #0061FE;
     padding: 8px 16px;
-    /*ho dato un piccolo bordo extra per renderlo piu bello*/
-    border-radius: 2px;
+    border-radius: 3px;
     color: white;
 }
 
 /* ========== JUMBOTRON ========== */
-/*container per jumbotron sfondo*/
-.container-jumbo-sfondo{
+.container-jumbo-sfondo {
     background-color: #B4D0E6;
-    height: 600px;
+    height: 650px;
     width: 100%;
-    
 }
-/*contenitore per contenuto jumbotron*/
-.container-jumbo{
+
+.container-jumbo {
     height: 500px;
     width: 1200px;
-    background-color: red;
+    background-color: transparent;
+}
 
-}
-/*selettore diretto figlio */
-.container-jumbo-sfondo > .container-jumbo > h1{
+.container-jumbo-sfondo > .container-jumbo > h1 {
     font-size: 5rem;
+    margin-bottom: 30px;
+    text-align: left;
 }
+
+/* Modifica importante: questo contenitore deve essere flex */
+.disposizione-immagine-paragrafo {
+    display: flex;
+    width: 100%;
+}
+
+.disposizione-jumbo {
+    gap: 30px;
+    width: 35%;
+    font-size: 1.2rem;
+    padding-top: -2px;
+    background-color: transparent;
+}
+
+.pulsante-jumbo a {
+    background-color: #0061FE;
+    padding: 8px 16px;
+    border-radius: 3px;
+    display: inline-block;
+    color: white;
+}
+
+.pulsante-annula a {
+    display: inline-block;
+    padding: 8px 16px;
+    
+}
+
+.immagine-jumbo {
+    background-color: transparent;
+    height: 400px;
+    width: 60%;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
+
+/*aggiunto in piu pulsante annulla quando vuoi */
+.pulsante-annula a{
+    text-align: left;
+    background-color: red;
+    border-radius: 3px;
+    
+    
+}
+
+/*quando passa la freccetta fa un animazione tipo click su link e pulsanti*/
+a:hover{
+    font-size: 1.1rem;
+}
+
+
+
