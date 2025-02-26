@@ -6,24 +6,29 @@
 }
 
 /* --- TEXT UTILITIES --- */
+
+.gray{
+    color: rgb(107, 101, 101);
+}
+.black{
+    color: black;
+    font-size: 1rem;
+}
+.border{
+    border: 1px solid gainsboro;
+}
 .flex {
     display: flex;
 }
-/*UTILIZZO SU TUTTA LA PAGINA*/
-.container {
-    height: 800px;
-    width: 1100px;
-    margin: 0 auto;
-    padding: 0;
-    background-color: aqua;
-}
-
 .center-align-items {
     align-items: center;
 }
 
 .justify-content {
     justify-content: center;
+}
+.justify-content-left{
+    justify-content: left;
 }
 
 .spacebetween {
@@ -33,6 +38,45 @@
 .reverse {
     flex-direction: column;
 }
+.gaps{
+    gap: 5px;
+}
+/*UTILIZZO SU TUTTA LA PAGINA*/
+.container {
+    height: 800px;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: transparent;
+    
+}
+
+.container-modulare {
+    
+    width: 1100px;
+    margin-top: 60px;
+    
+    padding: 0;
+    background-color: transparent;
+    
+}
+.container-modulare-1 {
+    height: 1100px;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: transparent;
+    
+}
+.container-modulare-2 {
+    
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+   
+    
+}
+
 
 /* --- LAYOUT PRINCIPALE --- */
 body {
@@ -155,8 +199,9 @@ a:hover{
 
 .sfondi-piano-tariffario{
     width: 100%;
-    background-color: yellow;
-    height: 1000PX;
+    background-color: transparent;
+    height: 1200PX;
+    text-align: left;
 }
 
 .sfondi-piano-tariffario > .container > h2{
@@ -165,6 +210,7 @@ a:hover{
 /*pulsanti rotondi*/
 .radio-button{
     gap: 20px;
+    
   
 }
 
@@ -173,6 +219,75 @@ a:hover{
     padding-bottom: 30px;
 }
 
+/* Lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+}/* Lista */
+
+/*modifico gli li*/
+ul li {
+    
+    margin: 5px 0;
+    padding: 10px;
+    
+}
+
+ul li h4{
+    font-size: 1.8rem;
+}
+/*le colonne che hanno una larcghezza di 320 1000/3 laltezza in base a quello che gli serve*/
+.col {
+    background: white;
+    padding: 20px;
+    border-radius: 3px;
+    
+    
+    min-width: 300px;
+    
+}
+
+
+
+h5{
+    text-align: center;
+}
+h6{
+    font-size: 1rem;
+}
+/*da controllare*/
+
+
+   
+
+hr{
+    width: 30%;
+}
+.pulsante-lista{
+    background-color: #0061FE;
+    padding: 8px 16px;
+    border-radius: 3px;
+    color: white;
+}
+
+.link-blu{
+    color: #0061FE;
+}
+
+
+i{
+    font-size: 0.9rem;
+    padding-right: 5px;
+    
+}
+
+.bottone-ufficio{
+    background-color: #0061FE;
+    padding: 8px 16px;
+    border-radius: 3px;
+    color: white;
+    
+}
 
 
 
