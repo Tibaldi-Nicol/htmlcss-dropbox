@@ -9,9 +9,10 @@
 .flex {
     display: flex;
 }
-
+/*UTILIZZO SU TUTTA LA PAGINA*/
 .container {
-    width: 1000px;
+    height: 800px;
+    width: 1100px;
     margin: 0 auto;
     padding: 0;
     background-color: aqua;
@@ -37,11 +38,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/*essendoci fixed copre una parte di jumbo la faccio uscire cosi*/
 main {
     padding-top: 100px;
 }
-
+/*essendo navbar puo avere altezza fisa*/
 header {
     height: 80px;
     background-color: white;
@@ -83,7 +84,8 @@ a {
 /* ========== JUMBOTRON ========== */
 .container-jumbo-sfondo {
     background-color: #B4D0E6;
-    height: 650px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     width: 100%;
 }
 
@@ -148,6 +150,29 @@ a {
 a:hover{
     font-size: 1.1rem;
 }
+
+/* ========== MAIN ========== */
+
+.sfondi-piano-tariffario{
+    width: 100%;
+    background-color: yellow;
+    height: 1000PX;
+}
+
+.sfondi-piano-tariffario > .container > h2{
+    font-size: 2rem;
+}
+/*pulsanti rotondi*/
+.radio-button{
+    gap: 20px;
+  
+}
+
+.gap{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
 
 
 
