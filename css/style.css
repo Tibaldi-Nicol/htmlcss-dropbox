@@ -16,9 +16,9 @@
 .flex{
     display: flex;
 }
-
+/*per il contenuto dopo il jumbotron*/
 .container{
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
     padding: 0;
     background-color: aqua;
@@ -28,10 +28,20 @@
     align-items: center;
 }
 
-.center-align-items{
-    align-items: center;
+.justify-content{
+    justify-content: center;
 }
+
 /* --- LAYOUT PRINCIPALE --- */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    /*avendo usato fixed devo dare padding top per far uscire lo sfondo*/
+    padding-top: 100px;
+}
 
 header{
     height: 80px;
@@ -42,6 +52,7 @@ header{
     width: 100%;
     
 }
+
 
 a{
     text-decoration: none;
@@ -63,12 +74,14 @@ a{
 .navbar-sx{
     
     gap: 30px;
+    font-size: 1.1rem;
 
 }
 
 .navbar-dx{
 
     gap: 30px;
+    font-size: 1rem;
 
 }
 
@@ -80,8 +93,22 @@ a{
     color: white;
 }
 
-.colore{
-    background-color: aquamarine;
-    height: 1200px;
+/* ========== JUMBOTRON ========== */
+/*container per jumbotron sfondo*/
+.container-jumbo-sfondo{
+    background-color: #B4D0E6;
+    height: 600px;
     width: 100%;
+    
+}
+/*contenitore per contenuto jumbotron*/
+.container-jumbo{
+    height: 500px;
+    width: 1200px;
+    background-color: red;
+
+}
+/*selettore diretto figlio */
+.container-jumbo-sfondo > .container-jumbo > h1{
+    font-size: 5rem;
 }
