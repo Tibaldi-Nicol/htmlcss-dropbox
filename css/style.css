@@ -1,7 +1,87 @@
-/*css reset*/
+/* ========== RESET CSS ========== */
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+/* --- TEXT UTILITIES --- */
+
+/*(Classi monotematiche da usare dove serve)*/
+
+
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: aqua;
+}
+
+.center-align-items{
+    align-items: center;
+}
+
+.center-align-items{
+    align-items: center;
+}
+/* --- LAYOUT PRINCIPALE --- */
+
+header{
+    height: 80px;
+    background-color: white;
+    /*solo per ricordare*/
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ========== NAVBAR ========== */
+/*Contenitore che mi divide le due mezze navbar*/
+.spaziatura-navbar{
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    /*metto altezza anche ai div essendo ereditabile*/
+    height: 100%;
+    
+    
+}
+/*do aria agli elemenit di nav destra e sinistra*/
+.navbar-sx{
+    
+    gap: 30px;
+
+}
+
+.navbar-dx{
+
+    gap: 30px;
+
+}
+
+.pulsante-inizia a{
+    background-color: #0061FE;
+    padding: 8px 16px;
+    /*ho dato un piccolo bordo extra per renderlo piu bello*/
+    border-radius: 2px;
+    color: white;
+}
+
+.colore{
+    background-color: aquamarine;
+    height: 1200px;
+    width: 100%;
 }
