@@ -35,6 +35,10 @@
     justify-content: space-between;
 }
 
+.spacearound{
+    justify-content: space-around;
+}
+
 .reverse {
     flex-direction: column;
 }
@@ -51,16 +55,16 @@
     
 }
 
-.container-modulare {
+.container-modulare-business {
     
     width: 1100px;
-    margin-top: 200px;
+    margin-top: 100px;
     
     padding: 0;
     background-color: transparent;
     
 }
-.container-modulare-1 {
+.container-modulare-enterprise {
     
     width: 1100px;
     margin: 0 auto;
@@ -76,6 +80,30 @@
    
     
 }
+.container-modulare-operazioni {
+   
+    background-color: transparent;
+    flex-wrap: wrap;
+    
+    width: 1100px;
+    margin-top: 20px;
+    padding: 0;
+   
+    
+}
+
+.container-modulare-foto {
+    background-color: transparent;
+    height: auto;
+    width: 1100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    
+    
+   
+    
+}
 
 
 /* --- LAYOUT PRINCIPALE --- */
@@ -85,6 +113,8 @@ body {
 /*essendoci fixed copre una parte di jumbo la faccio uscire cosi*/
 main {
     padding-top: 100px;
+    background-color: transparent;
+    height: 100%;
 }
 /*essendo navbar puo avere altezza fisa*/
 header {
@@ -201,7 +231,7 @@ a:hover{
 .sfondi-piano-tariffario{
     width: 100%;
     background-color: transparent;
-    height: 1200PX;
+    
     text-align: left;
 }
 
@@ -254,6 +284,7 @@ ul li h4{
 /* Aumenta lo spazio tra le colonne */
 .container {
     gap: 30px;
+    
 }
 
 /* Allinea meglio i pulsanti nelle colonne */
@@ -267,6 +298,7 @@ ul li h4{
 /* Aumenta lo spazio sopra e sotto le colonne */
 .col {
     margin: 20px 0;
+    
 }
 
 /* Aggiunge spazio interno alle colonne */
@@ -321,6 +353,212 @@ i{
     color: white;
     
 }
+
+.foto-container{
+
+    background-image: url(../img/partner.png);
+    background-size: cover;
+    width: 100%;
+
+}
+
+
+.descrizione-foto > h4{
+    font-size: 2.5rem;
+    padding-top: 40px;
+}
+
+.descrizione-foto p{
+    font-size: 1.1rem;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.descrizione-foto a{
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 3px;
+    border: 1px solid black;
+
+}
+.descrizione-foto{
+    padding-left: 60px;
+}
+
+/* ========== PENULTIMA SEZIONE GRIGLIA CON FOTO ========== */
+
+
+.operazioni{
+    flex-wrap: wrap;
+    gap: 40px;
+}
+/*prima card*/
+.scatola-1{
+
+    height: 420px;
+    max-width: 320px;
+    background-color: transparent;
+
+}
+.immagine-illustrativa-1{
+    background-color: transparent;
+    background-image: url(../img/business-feature-switching-tools.png);
+    height: 50%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.operazioni h4{
+    font-size: 1.6rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/*-----------------------------------------------------------------------*/
+
+/*seconda card*/
+.scatola-2{
+
+    height: 420px;
+    max-width: 320px;
+    background-color: transparent;
+
+    
+}
+
+.immagine-illustrativa-2{
+    background-color: transparent;
+    background-image: url(../img/business-feature-send-files-it.png);
+    height: 50%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*terza card*/
+.scatola-3{
+
+    height: 420px;
+    max-width: 320px;
+    background-color: transparent;
+
+    
+}
+
+.immagine-illustrativa-3{
+    background-color: transparent;
+    background-image: url(../img/business-feature-coordinate-it.png);
+    height: 50%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*-----------------------------------------------------------------------*/
+
+/*quarta card*/
+.scatola-4{
+
+    height: 420px;
+    max-width: 320px;
+    background-color: transparent;
+
+}
+.immagine-illustrativa-4{
+    background-color: transparent;
+    background-image: url(../img/business-feature-integrations-it.png);
+    height: 50%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.operazioni h4{
+    font-size: 1.6rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/*-----------------------------------------------------------------------*/
+
+/*seconda card*/
+.scatola-5{
+
+    height: 420px;
+    max-width: 320px;
+    background-color: transparent;
+
+    
+}
+
+.immagine-illustrativa-5{
+    background-color: transparent;
+    background-image: url(/img/business-feature-multi-device.png);
+    height: 50%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*terza card*/
+.scatola-6{
+
+    height: 420px;
+    max-width: 320px;
+    background-color: transparent;
+
+    
+}
+
+.immagine-illustrativa-6{
+    background-color: transparent;
+    background-image: url(../img/business-feature-security.png);
+    height: 50%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.titolo-operazioni > h3{
+    font-size: 2.5rem;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+/*-----------------------------------------------------------------------*/
+/*fine sezione immagini a griglia*/
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
