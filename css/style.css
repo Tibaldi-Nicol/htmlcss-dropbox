@@ -310,6 +310,10 @@ ul li h4{
     padding: 10px 0;
 }
 
+.invisibile{
+    color: transparent;
+}
+
 /* Aumenta lo spazio sopra e sotto le colonne */
 .col {
     margin: 20px 0;
@@ -591,40 +595,54 @@ i{
     margin-top: 100px;
     
     padding: 0;
-    background-color: red;
+    background-color: transparent;
     
 
 }
 
 .col-footer-1{
-    background-color: #0061FE;
+    background-color: transparent;
     height: 100%;
     width: 240px;
 }
 
 .col-footer-2{
-    background-color: #fe007f;
+    background-color: transparent;
     height: 100%;
     width: 240px;
 }
 
 .col-footer-3{
-    background-color: #747f92;
+    background-color: transparent;
     height: 100%;
     width: 240px;
 }
 
 .col-footer-4{
-    background-color: #fe00f1;
+    background-color: transparent;
     height: 100%;
     width: 240px;
 }
 
 .col-footer-5{
-    background-color: #00fe6a;
+    background-color: transparent;
     height: 100%;
     width: 240px;
 }
+
+.bianco{
+    color: white;
+}
+
+hr{
+    width: 40%;
+}
+
+.icone{
+    color: white;
+}
+
+
 
 
 
